@@ -33,6 +33,7 @@ interface UserTableProps {
   onSearchChange: (term: string) => void;
   onAddUser: (data: any) => Promise<void>;
   onDeleteUser: (username: string) => void;
+  onDeleteDevice: (username: string) => void;
   onExtendUser: (username: string, months: number) => void;
   onUserActivity?: () => void;
 }
@@ -44,6 +45,7 @@ export const UserTable = ({
   onSearchChange,
   onAddUser,
   onDeleteUser,
+  onDeleteDevice,
   onExtendUser,
   onUserActivity
 }: UserTableProps) => {
